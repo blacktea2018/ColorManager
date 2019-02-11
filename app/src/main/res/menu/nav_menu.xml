@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/color_chose"
+            android:icon="@drawable/chose"
+            android:title="取色器"/>
+
+        <item
+            android:id="@+id/photo"
+            android:icon="@drawable/photo"
+            android:title="选取照片"/>
+
+        <item
+            android:id="@+id/color_select"
+            android:icon="@drawable/select"
+            android:title="查看颜色"/>
+        <item
+            android:id="@+id/QQ"
+            android:icon="@drawable/touch"
+            android:title="请不要点击!"/>
+    </group>
+</menu>

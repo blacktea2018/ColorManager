@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_color"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#00000000"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textSize="18sp"
+            android:text="长按复制至剪切板" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#21212121"/>
+
+        <TextView
+            android:id="@+id/text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="24sp"
+            android:text="#00000000"/>
+
+        <LinearLayout
+            android:id="@+id/layout_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/A"
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="A"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekbar_A"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="255"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/edit_A"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:numeric="integer"
+                android:maxLength="3"
+                android:text="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_R"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/R"
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:text="R"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekbar_R"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="255"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/edit_R"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:numeric="integer"
+                android:maxLength="3"
+                android:text="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_G"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/G"
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#00ff00"
+                android:text="G"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekbar_G"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="255"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/edit_G"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:numeric="integer"
+                android:maxLength="3"
+                android:text="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/B"
+                android:layout_width="20sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#0000ff"
+                android:text="B"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekbar_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:max="255"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/edit_B"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:numeric="integer"
+                android:maxLength="3"
+                android:text="0"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        app:theme="@style/MenuTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu"/>
+</android.support.v4.widget.DrawerLayout>
